@@ -1,0 +1,114 @@
+body{
+    background-color: black;
+    color: red;
+    margin: 0;
+    padding: 0;
+    font-family:'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+div span {
+    text-transform: uppercase;
+    color: rgb(194, 140, 140);
+    font-weight: 100;
+    letter-spacing: 3px;
+    font-size: 70px;
+}
+.head{
+    margin-top: 24px;
+    text-align: center;
+}
+div span:first-child {
+    animation: red 0.5s linear infinite;
+    animation-delay: 0.25s;
+}
+div span:last-child {
+    animation: blue 0.5s linear infinite;
+    animation-delay: 0.5s;
+}
+@keyframes red {
+    from {
+        text-shadow: 0 0 5px red,
+                     0 0 15px red,
+                     0 0 30px red,
+                     0 0 60px red;
+    }
+}
+@keyframes blue {
+    from {
+        text-shadow: 0 0 5px red,
+                     0 0 15px red,
+                     0 0 30px red,
+                     0 0 60px red;
+    }
+}
+#movie-name{
+    height: 28px;
+    width: 300px;
+    border-radius: 12px;
+    padding: 2px;
+}
+button{
+    background-color: red;
+    color: black;
+    font-size:large ;
+    border-radius: 12px;
+    padding: 5px;
+    width: 100px;
+}
+#movies-wrapper{
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.movie-card {
+    width: 100%;
+    max-width: 19%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px rgb(204, 204, 204);
+    padding: 12px;
+    border-radius: 12px;
+    
+}
+.movie-card:hover{
+    transform: scale(1.05);
+    transition: 2s ease-out ;
+    box-shadow: 0 2px 5px red;
+}
+.movie-image{
+    width: 100%;
+}
+h3{
+    padding-left: 12px;
+}
+.nav{
+    display: flex;
+    background-color: rgb(253, 9, 9);
+    color:black;
+}
+ul{
+    display: flex;
+    text-align: center;
+    margin-left: 40%;
+    cursor: pointer;
+    
+}
+li{
+    padding-left:20px ;
+    list-style: none;
+    margin-top: 6px;
+    font-weight: bold;
+}
+#sign{
+    background-color: black;
+    color: red;
+    cursor: pointer;
+    height: 40px;
+    font-size: 16px;
+    position: absolute;
+    left: 92%;
+    top: 8px;
+    
+}
